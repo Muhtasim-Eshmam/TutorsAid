@@ -14,16 +14,26 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
+    public function index()
+    {
+       
+        return view('adminlogin');
+    }
+
+    public function main()
+    {
+       
+        return view('admin');
+    }
 
 
      public function panel()
     {
        
-           
-       
-        return view('admin');
+        return view('panel.adminmain');
     }
+
+
 
     public function adminchck (Request $request)
     { 
@@ -37,7 +47,7 @@ class AdminController extends Controller
         }
         else
         {       
-        $viewFilePath='welcome';
+        $viewFilePath='adminlogin';
         }
         
         // Toastr::success('Successful', 'Admin', ["positionname" => "toast-top-right"]);
@@ -64,16 +74,6 @@ $month=Carbon::now()->month;
         return view('regstudents.regstudents',compact('User','carbon','month'));
     
     }
-
-
-
-
-
-
-
-
-
-
 
    
     public function create()

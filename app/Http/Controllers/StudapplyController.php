@@ -10,7 +10,7 @@ class StudapplyController extends Controller
     
     public function stuapply()                    //assistnce
     {
-        return view('student.stuapply');
+        return view('student.applyhere.stuapply');
     }
 
 
@@ -32,13 +32,13 @@ class StudapplyController extends Controller
     public function show(studapply $studapply)
     {
         $studapply = studapply::all();
-        return view('student.appview',compact('studapply'));
+        return view('student.applyhere.appview',compact('studapply'));
     }
 
     public function edit(studapply $studapply , $id)
     {
         $studapply=studapply::find($id);
-        return view('student.appupdate',compact('studapply'));
+        return view('student.applyhere.appupdate',compact('studapply'));
     }
 
     /**

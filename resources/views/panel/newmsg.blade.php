@@ -45,25 +45,12 @@
         <div class="form-group">
             <input type="hidden"  id="name" name="name" placeholder="name" value="{{auth()->user()->name}}" >
         </div>
-  
-       
-
-
-
-
         <div class="d-grid mb-2">
           <button class="btn btn-primary " type="submit">Post</button>
           <a href="http://127.0.0.1:8000/showpanel" class="btn btn-primary">Panel</a><br>
     
-        </div>
-
-
-
-       
+        </div>   
         <hr class="my-4">
-
-        
-
       </form>
 
       <a href="http://127.0.0.1:8000/student" class="btn btn-primary">Back</a>

@@ -66,8 +66,5 @@ class ScheduleController extends Controller
     }
 
   
-    public function destroy(schedule $schedule)
-    {
-        //
-    }
+   
 }

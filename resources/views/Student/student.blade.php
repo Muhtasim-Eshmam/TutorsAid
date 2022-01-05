@@ -141,17 +141,14 @@
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Discussion Panel <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
                             <li class="active"><a href="http://127.0.0.1:8000/showpanel">Open Panel</a></li>
-                            <li><a href="http://127.0.0.1:8000/newmsg">Post</a></li>
-                            <li><a href="http://127.0.0.1:8000/showmsgs">View my posts</a></li>
+                    
+                            <li><a href="http://127.0.0.1:8000/showmsgs">View My Messages</a></li>
                           </ul>
                       </li>
                       <li class="nav-item dropdown active">
                         
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes<i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                         
-                          <li><a href="http://127.0.0.1:8000/viewnotes">View</a></li>
-                        </ul>
+                        <a href="http://127.0.0.1:8000/viewnotes" class="nav-link dropdown-toggle" >Notes<i class="fa fa-angle-down"></i></a>
+                       
                     </li>
 
                       <li class="nav-item dropdown">
@@ -168,14 +165,14 @@
                       <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/marksview">Marksheets</a></li>
 
                       <li class="nav-item dropdown">
-                        <a href="http://127.0.0.1:8000/payments" class="nav-link dropdown-toggle" data-toggle="dropdown">Payments</i></a>
+                        <a href="http://127.0.0.1:8000/payments" class="nav-link dropdown-toggle" data-toggle="dropdown">My Payments</i></a>
                         
-                    </li>
+                    {{-- </li>
                       <li class="nav-item dropdown">
-                          <a href="http://127.0.0.1:8000/assistcheck" class="nav-link dropdown-toggle" data-toggle="dropdown">Apply Here <i class="fa fa-angle-down"></i></a>
+                          <a href="http://127.0.0.1:8000/assistance" class="nav-link dropdown-toggle" data-toggle="dropdown">Apply Here <i class="fa fa-angle-down"></i></a>
                          
                       </li>
-              
+               --}}
                      
               
                       <li class="nav-item dropdown">
@@ -187,7 +184,12 @@
                           <a href="http://127.0.0.1:8000/noticeshow" class="nav-link dropdown-toggle" >Notices <i class="fa fa-angle-down"></i></a>
                          
                       </li>
-              
+                      
+                      <li class="nav-item dropdown">
+                        <a href="http://127.0.0.1:8000/showassign" class="nav-link dropdown-toggle" >Assignments <i class="fa fa-angle-down"></i></a>
+                       
+                    </li>
+                      
                      
                     </ul>
                 </div>
@@ -260,9 +262,6 @@
                         <td> {{ $row->bookname }} </td>
                         {{-- <td> {{ $row->price }} </td>
                         <td> {{ $row->store }} </td> --}}
-
-
-
                         {{-- <td> {{ $row->created_at }} </td> --}}
                       
                         {{-- <td>
@@ -282,9 +281,6 @@
   </div>
   
 </div><!-- Banner area end --> 
-
-
-
   <footer id="footer" class="footer bg-overlay">
     <div class="footer-main">
       <div class="container">
@@ -306,7 +302,6 @@
               </ul>
             </div><!-- Footer social end -->
           </div><!-- Col end -->
-
           <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
             <h3 class="widget-title">Working Hours</h3>
             <div class="working-hours">
@@ -317,7 +312,6 @@
               <br> Sunday and holidays: <span class="text-right">09:00 - 12:00</span>
             </div>
           </div><!-- Col end -->
-
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
             <h3 class="widget-title">Services</h3>
             <ul class="list-arrow">
@@ -331,7 +325,6 @@
         </div><!-- Row end -->
       </div><!-- Container end -->
     </div><!-- Footer main end -->
-
     <div class="copyright">
       <div class="container">
         <div class="row align-items-center">
@@ -342,7 +335,6 @@
                 </script>, Designed Muhtasim Rahman</span>
             </div>
           </div>
-
           <div class="col-md-6">
             <div class="footer-menu text-center text-md-right">
               <ul class="list-unstyled">
@@ -353,21 +345,16 @@
             </div>
           </div>
         </div><!-- Row end -->
-
         <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
           <button class="btn btn-primary" title="Back to Top">
             <i class="fa fa-angle-double-up"></i>
           </button>
         </div>
-
       </div><!-- Container end -->
     </div><!-- Copyright end -->
   </footer><!-- Footer end -->
-
-
   <!-- Javascript Files
   ================================================== -->
-
   <!-- initialize jQuery Library -->
   <script src="plugins/jQuery/jquery.min.js"></script>
   <!-- Bootstrap jQuery -->
@@ -379,17 +366,12 @@
   <script src="plugins/colorbox/jquery.colorbox.js"></script>
   <!-- shuffle -->
   <script src="plugins/shuffle/shuffle.min.js" defer></script>
-
-
   <!-- Google Map API Key-->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
   <!-- Google Map Plugin-->
   <script src="plugins/google-map/map.js" defer></script>
-
   <!-- Template custom -->
   <script src="js/script.js"></script>
-
   </div><!-- Body inner end -->
   </body>
-
   </html>

@@ -23,7 +23,7 @@
     <header class="text-center text-white">
       <h1 class="display-6">Students here</h1>
       
-    <a href="{{ url()->previous () }}" class="btn btn-success">Close    </a> 
+   
     <a href="http://127.0.0.1:8000/admin" class="btn btn-danger">Exit</a> 
           {{-- <u>Datatables</u></a>, add interaction controlsto your HTML tables.</p>
       <p class="font-italic">Snippet By
@@ -53,12 +53,12 @@
                       </div><br> --}}
   
   
-                      <form action="{{ route('search') }}" class="d-flex" method="post"> 
+                      {{-- <form action="{{ route('search') }}" class="d-flex" method="post"> 
                         @csrf
                         <input class="form-control search-box" type="search" name="string" placeholder="Search name" aria-label="Search">
-                        {{-- <button class="btn btn-outline-primary btn-search btn-sm" type="submit">Search<span data-feather="search" class="p-1"></span></button> --}}
-                    </form>
-  
+                        {{-- <button class="btn btn-outline-primary btn-search btn-sm" type="submit">Search<span data-feather="search" class="p-1"></span></button> 
+                    </form> --}}
+ 
   
   
   

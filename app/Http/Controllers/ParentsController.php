@@ -14,7 +14,6 @@ class ParentsController extends Controller
     }
 
 
-
     public function send()
     {
         Mail::to(request('email'))->send(new parents());
@@ -22,15 +21,7 @@ class ParentsController extends Controller
 
     }
 
-
-
-
     
-
-    public function test()
-    {
-        return view('test');
-    }
 
 
 

@@ -79,8 +79,8 @@
               <h1>Assistance</h1>
           
       
-       <a href="http://127.0.0.1:8000/assistance" class="button button-primary">Post Assistance</a><br>
-       <a href="http://127.0.0.1:8000/assistanceshow" class="button button-primary">Assistance View</a><br>
+       <a href="http://127.0.0.1:8000/assistance" class="button button-primary">Post Jobs</a><br>
+       <a href="http://127.0.0.1:8000/assistanceshow" class="button button-primary">Jobs View</a><br>
        <a href="http://127.0.0.1:8000/reports" class="button button-primary">View Reports</a><br>
 
 

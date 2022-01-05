@@ -30,8 +30,7 @@
                         <div class="line"></div> <h1>Welcome Admin</h1>
                         <div class="line"></div>
                     </div>
-                    <form action="{{route('admin.check')}}" method="get">
-                        @csrf
+                    <form action="{{route('admin.check')}}" method="get"> 
                     <div class="row px-3"> <label class="mb-1">
                             <h6 class="mb-3 text-lg">Your Name</h6>
                         </label> <input class="mb-4" type="text" name="key" id="key "placeholder="Enter Name"> </div>

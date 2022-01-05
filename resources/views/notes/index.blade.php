@@ -23,7 +23,7 @@
     <header class="text-center text-white">
       <h1 class="display-6">View Notes here</h1>
       
-    <a href="{{ url()->previous () }}" class="btn btn-success">Close    </a>   <a href="http://127.0.0.1:8000/student" class="btn btn-danger">Exit    </a> 
+    <a href="{{ url()->previous () }}" class="btn btn-success">Close    </a>  
 
           {{-- <u>Datatables</u></a>, add interaction controlsto your HTML tables.</p>
       <p class="font-italic">Snippet By

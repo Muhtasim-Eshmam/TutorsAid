@@ -45,10 +45,6 @@
   
                     
   
-                    <div class="form-outline">
-                        <input type="search" id="form1" class="form-control" placeholder="Type query"
-                        aria-label="Search" />
-                      </div><br>
   
                       <tr class="info" >
                         {{-- <th> Id </th> --}}
@@ -59,7 +55,7 @@
                         <th> Bookname </th>
                         <th> Price </th>
                         <th> Store </th>
-                       <th> Action </th> 
+                    
                         
                 </tr>
                 @foreach($schedule as $row)

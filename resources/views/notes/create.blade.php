@@ -24,9 +24,10 @@
             </div>
             <div class="col-lg-4">
                 <div class="card2 card border-0 px-6 py-5">
-                
+                  
                     <div class="row px-3 mb-4">
                         <div class="line"></div> <h1>Add Notes</h1>
+                        
                         <div class="line"></div>
                     </div>
 
@@ -64,6 +65,7 @@
         <button type="submit" class="btn btn-success">
             Create
         </button>
+        <a href="http://127.0.0.1:8000/admin" class="btn btn-outline-primary">Exit</a>
     </div>
 </div>
 </form>

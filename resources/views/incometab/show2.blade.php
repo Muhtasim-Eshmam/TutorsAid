@@ -21,7 +21,7 @@ body {
 <div class="container py-5">
     <header class="text-center text-white">
       <h1 class="display-6">Income Tab View</h1>
-    
+      <a href="http://127.0.0.1:8000/admin" class="btn btn-danger">Back</a>
     </header>
   
     <nav class="navbar navbar-expand-md navbar-dark">
@@ -38,7 +38,7 @@ body {
 
 
                     
-                  <a href="http://127.0.0.1:8000/admin" class="navbar-brand">Back</a>
+             
                   <form action="{{ route('searchsalary') }}" class="d-flex" method="post"> 
                     @csrf
                     <input class="form-control search-box" type="search" name="string" placeholder="Search name" aria-label="Search">
@@ -54,7 +54,7 @@ body {
                         <th> email </th>
                         <th> Status </th>
                         <th> Date </th>
-                        <th> Action </th>
+                      
                         {{-- <th> Action </th> --}}
                 </tr> 
             
@@ -74,11 +74,7 @@ body {
                         <td> {{ $row->created_at }} </td>
                    
                         
-                        <td>
-                          
-                            
-                            <a href="{{URL::to('edit/income/'.$row->id) }}" class="btn btn-sn btn-success">Update</a>
-                        </td>  
+                        
                       
                 
                 </div>

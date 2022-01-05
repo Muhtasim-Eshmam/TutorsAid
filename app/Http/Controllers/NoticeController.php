@@ -51,43 +51,8 @@ class NoticeController extends Controller
      */
     public function show(notice $notice)
     {
-
-
         $notice = notice::orderBy('created_at','DESC')->get();
-        return view('notice.noticeview',compact('notice'));
+        return view('notice.one.noticeview',compact('notice'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\notice  $notice
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(notice $notice)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\notice  $notice
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, notice $notice)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\notice  $notice
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(notice $notice)
-    {
-        //
-    }
 }
