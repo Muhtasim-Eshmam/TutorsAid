@@ -24,7 +24,8 @@
   <div class="container py-5">
     <header class="text-center text-white">
       <h1 class="display-6">Attendance</h1>
-    {{-- <a href="/store/attend">Add department</a> --}}
+      <a href="http://127.0.0.1:8000/admin" class="btn btn-danger">Exit</a> 
+    {{-- <a href="/store/attend">Add department</a> --}}<br>
     <input type="text" name="search" id="search" placeholder="Enter your keyword" class="form-control search-box">
 
    
@@ -41,7 +42,7 @@
         <th> ID </th>
         <th> Student Name </th>
         <th> Date </th>
-        <th> week </th>
+        <th> Week/class </th>
         <th> Subject </th>
      
       

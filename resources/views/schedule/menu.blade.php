@@ -23,7 +23,7 @@
           
       
        <a href="http://127.0.0.1:8000/schedule" class="button button-primary">Add Schedule</a><br>
-       <a href="http://127.0.0.1:8000/scheduleshow" class="button button-primary">View Current schedule</a><br>
+       <a href="http://127.0.0.1:8000/scheduleshow" class="button button-primary">View  schedule</a><br>
        {{-- <a href="http://127.0.0.1:8000/admin" class="button button-primary">X</a><br> --}}
           </div>
       </div>

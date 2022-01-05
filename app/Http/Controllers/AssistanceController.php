@@ -25,10 +25,7 @@ class AssistanceController extends Controller
     }
 
 
-    public function stumenu()
-    {
-        return view('assistance.stumenu');
-    }
+    
 
    
     public function store(Request $request)

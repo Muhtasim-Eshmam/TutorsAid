@@ -27,7 +27,7 @@
                 
                     <div class="row px-3 mb-4">
                         <div class="line"></div> <h1>Add Schedule</h1>
-                        <a href="http://127.0.0.1:8000/" class="button">Back </a> 
+                     
                       
                         <div class="line"></div>
                     </div>

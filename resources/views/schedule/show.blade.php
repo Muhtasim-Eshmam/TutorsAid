@@ -45,11 +45,7 @@
   
                     
   
-                    <div class="form-outline">
-                        <input type="search" id="form1" class="form-control" placeholder="Type query"
-                        aria-label="Search" />
-                      </div><br>
-  
+                  
                       <tr class="info" >
                         {{-- <th> Id </th> --}}
                         {{-- <th> ID </th> --}}

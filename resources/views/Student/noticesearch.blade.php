@@ -24,6 +24,7 @@
   <div class="container py-5">
     <header class="text-center text-white">
       <h1 class="display-6">Notice</h1><br>
+      <a href="{{ url()->previous () }}" class="btn btn-success">Close    </a>  
     {{-- <a href="/store/attend">Add department</a> --}}
     <input type="text" name="search" id="search" placeholder="Enter your keyword" class="form-control search-box">
 

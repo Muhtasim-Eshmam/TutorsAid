@@ -28,12 +28,7 @@ class PanelController extends Controller
         $newmsg->name = $request->name;
         $newmsg->title = $request->title;
         $newmsg->msg = $request->msg;
-      
-       
-       
         // Mail::to($newmsg->email)->send(new WelcomeMail());
-
-
         $newmsg->save();
         return back();
     }
@@ -48,21 +43,5 @@ class PanelController extends Controller
     }
 
     
-        
-  
-
-    public function edit(panel $panel)
-    {
-        
-    }
-
-    public function update(Request $request, panel $panel)
-    {
-    }
-
- 
-    public function destroy(panel $panel)
-    {
-        
-    }
+    
 }

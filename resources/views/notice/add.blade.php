@@ -48,7 +48,7 @@
                         
                      </form>    
             
-                <button ahref="http://127.0.0.1:8000/noticemenu" class="btn btn-outline-primary">Back </button> <br>
+                <a href="http://127.0.0.1:8000/noticemenu" class="btn btn-outline-primary">Back </a> <br>
                         
                 </div>
             </div>

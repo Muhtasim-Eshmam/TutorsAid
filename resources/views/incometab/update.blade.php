@@ -15,22 +15,7 @@
 <div>
 
     <body>
-      <div class="container-fluid px-1 px-md-3 px-lg-1 px-xl-5 py-3 mx-auto">
-        <div class="card card0 border-0">
-            <div class="row d-flex">
-                <div class="col-lg-6">
-                    <div class="card1 pb-0">
-                        <div class="row"> <img src="4.png" class="logo"> </div>
-                        <div class="row px-2 justify-content-center mt-4 mb-5 border-line"> <img src="48.jpg" class="image"> </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card2 card border-0 px-6 py-5">
-                    
-                        <div class="row px-3 mb-4">
-                            <div class="line"></div> <h1>Add attendance</h1>
-                            <div class="line"></div>
-                        </div>
+      
     <form action="{{ url('update/income/'.$income->id)}}" method="get"> 
         @csrf
         <input type="text" name="name" id="sname " value="{{$income->name}}" >

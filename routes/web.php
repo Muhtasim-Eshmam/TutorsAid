@@ -16,15 +16,28 @@ use Carbon\Carbon;
 Route::get('/', 'StudentController@live') ;
  
 
-
-
-
 // Admin panel---------------------------------------------------------------------------------
 
 
 Route::get('/admincheck','AdminController@adminchck')->name('admin.check');
 Route::get('/adminlogin','Admincontroller@index');
-Route::get('/admin','Admincontroller@panel');
+Route::get('/admin','Admincontroller@main');
+
+
+
+Route::get('/assignments','AssignmentController@index');
+Route::post('/store/assignments', 'AssignmentController@store')->name('assignment.save');
+Route::get('/assignmentshow','AssignmentController@show');
+Route::get('/assignmenu','AssignmentController@menu');
+Route::get('/submissions','AssignmentController@submissions');
+Route::get('edit/assignments/{id}', 'AssignmentController@edit');
+Route::get('update/assignments/{id}', 'AssignmentController@update');
+
+
+Route::get('/showassign','SubmissionController@showassign');
+Route::get('/submit','SubmissionController@submithere');
+Route::post('/store/submission', 'SubmissionController@store')->name('submission.save');
+
 
 
 Route::get('/parents','ParentsController@create');
@@ -57,11 +70,6 @@ Route::get('/showmarksheet','MarksheetController@show');
 Route::post('/searchmarks', 'MarksheetController@search')->name('search');
 Route::get('edit/marksheet/{id}', 'MarksheetController@edit');
 Route::get('update/marksheet/{id}', 'MarksheetController@update');
-
-
-
-
-
 
 
 Route::get('/noticemenu','NoticeController@index');
@@ -99,14 +107,6 @@ Route::get('/studentmsgs','PanelController@studentmsgs');
 
 
 
-Route::post('/store/newmsg', 'PanelController@store')->name('student.newmsg');
-Route::get('/newmsg','PanelController@create');
-Route::get('/showpanel','StudentController@show');
-Route::get('/showmsgs','StudentController@mymsgs');
-Route::get('edit/mymsgs/{id}', 'StudentController@editmsg');
-Route::get('update/mymsgs/{id}', 'StudentController@updatemsg');
-Route::get('delete/mymsgs/{id}', 'StudentController@destroymsg');
-
 
 
 
@@ -116,7 +116,7 @@ Route::get('delete/mymsgs/{id}', 'StudentController@destroymsg');
 Route::get('/index','NotesController@index')->name('notes.index');
 Route::get('/create','NotesController@create');
 Route::post('/store/notes', 'NotesController@store')->name('notes.store');
-Route::get('delete/notes/{id}', 'NotesController@destroy');
+// Route::get('delete/notes/{id}', 'NotesController@destroy');
 Route::get('/viewnotes','StudentController@viewnotes');
 
 
@@ -140,7 +140,7 @@ Route::get('/viewnotes','StudentController@viewnotes');
 
 
 
-Route::get('/admincheck','StudentController@validatechck')->name('checknow');
+// Route::get('/admincheck','StudentController@validatechck')->name('checknow');
 Route::get('/sms','SmsController@index')->name('sms');
 
 Auth::routes();
@@ -151,7 +151,7 @@ Route::get('/seemore','StudentController@seemore');
 
 Route::get('/stumenu','AssistanceController@stumenu');
 Route::get('/stushow','StudentController@stushow');
-Route::get('/assistantcheck','StudentController@valid')->name('assist.check');
+Route::get('/assistance','StudentController@assistmenu');
 Route::get('/studapply','StudapplyController@stuapply');
 Route::post('/store/applynow', 'StudapplyController@appstore')->name('studapply.save');
 Route::get('/appview','StudapplyController@show');
@@ -167,6 +167,14 @@ Route::get('/payments','StudentController@payment');
 
 
 
+
+Route::post('/store/newmsg', 'PanelController@store')->name('student.newmsg');
+Route::get('/newmsg','PanelController@create');
+Route::get('/showpanel','StudentController@show');
+Route::get('/showmsgs','StudentController@mymsgs');
+Route::get('edit/mymsgs/{id}', 'StudentController@editmsg');
+Route::get('update/mymsgs/{id}', 'StudentController@updatemsg');
+Route::get('delete/mymsgs/{id}', 'StudentController@destroymsg');
 
 
 

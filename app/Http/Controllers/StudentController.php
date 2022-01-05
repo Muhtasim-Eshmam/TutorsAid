@@ -7,6 +7,7 @@ use App\assistance;
 use App\attendance;
 use App\studapply;
 use App\marksheet;
+use App\assignment;
 use App\notice;
 use App\panel;
 use App\notes;
@@ -28,6 +29,12 @@ class StudentController extends Controller
         return view('welcome2',compact('schedule'));
     }
 
+    public function assistmenu()
+    {
+       
+          
+        return view('Student.applyhere.assistmenu');
+    }
 
 
 
@@ -45,6 +52,7 @@ class StudentController extends Controller
     }
 
 
+
     public function welcome()
     {
         return view('welcome2');
@@ -60,33 +68,34 @@ class StudentController extends Controller
 
 
 
-    public function valid (Request $request)                       //assistnce
-    { 
+    // public function valid (Request $request)                       //assistnce
+    // { 
      
-        $loc = $request->input('loc');
-        // dd($request->input('key'));
-        $viewFilePath='';
-        if( $loc=='222' || $loc=='reset' ) 
-        {      
-         $viewFilePath='Student.assistmenu';    
-        }
-        else
-        {       
-        $viewFilePath='check';
-        }
+    //     $loc = $request->input('loc');
+    //     // dd($request->input('key'));
+    //     $viewFilePath='';
+    //     if( $loc=='222' || $loc=='reset' ) 
+    //     {      
+    //      $viewFilePath='Student.assistmenu';    
+    //     }
+    //     else
+    //     {       
+    //     $viewFilePath='check';
+    //     }
         
-        // Toastr::success('Successful', 'Admin', ["positionname" => "toast-top-right"]);
-         return view($viewFilePath);
+    //     // Toastr::success('Successful', 'Admin', ["positionname" => "toast-top-right"]);
+    //      return view($viewFilePath);
     
        
-    }
+    // }
 
 
     public function stushow(assistance $assistance, Request $request)                    //assistnce
     {   $assistance = assistance::all();
-        return view('student.stushow',compact('assistance'));
+        return view('student.applyhere.stushow',compact('assistance'));
     }
-    //assistnce
+
+  
 
 
     public function marksview(marksheet $marksheet, Request $request)                    //marksheet
@@ -96,7 +105,7 @@ class StudentController extends Controller
         $sum3 = $marksheet->avg('mock3');
 
         $marksheet = marksheet::all();
-        return view('student.viewmarks',compact('marksheet','sum1','sum2','sum3'));
+        return view('student.one.viewmarks',compact('marksheet','sum1','sum2','sum3'));
       
     }
   
@@ -104,7 +113,7 @@ class StudentController extends Controller
     public function attendance(attendance $attendance, Request $request)                    //attendance
     {    
         $attendance = attendance::all();
-        return view('student.viewattend',compact('attendance'));  
+        return view('student.one.viewattend',compact('attendance'));  
     }
 
 
@@ -112,7 +121,7 @@ class StudentController extends Controller
     public function payment(incometab $income, Request $request)                    //attendance
     {    
         $income = incometab::all();
-        return view('student.viewpayment',compact('income'));  
+        return view('student.one.viewpayment',compact('income'));  
     }
 
 
@@ -185,7 +194,7 @@ class StudentController extends Controller
     public function viewnotes(notes $notes)
     {
         $notes = notes::orderBy('classno')->get();
-        return view('student.viewnotes', compact('notes'));
+        return view('student.one.viewnotes', compact('notes'));
     }
 
 

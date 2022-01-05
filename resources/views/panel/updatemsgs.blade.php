@@ -19,7 +19,7 @@
 </style>
 <body>
 
-<h3>Update Schedule</h3>
+<h3>Update Your Message</h3>
 
 <div>
 

@@ -33,26 +33,23 @@
 
 
 					<li class="dropdown">
-						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Email</a>
-						<div class="dropdown-menu">
-              <a href="http://127.0.0.1:8000/parents" class="dropdown-item">Email parents<a>
-            
-						</div>
+						<a href="http://127.0.0.1:8000/parents" class="nav-item nav-link" >Email Parents</a>
+						
 					</li>
 
 					<li class="dropdown">
 						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Reg Students</a>
 						<div class="dropdown-menu">
-              <a href="http://127.0.0.1:8000/regstudents" class="dropdown-item">View Reg students</a>
+              <a href="http://127.0.0.1:8000/regstudents" class="dropdown-item">View List</a>
             
 						</div>
 					</li>
 
 					<li class="dropdown">
-						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Income</a>
+						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Incometab</a>
 						<div class="dropdown-menu">
-              <a href="http://127.0.0.1:8000/incometab" class="dropdown-item">Incometab</a>
-              <a href="http://127.0.0.1:8000/incomeshow" class="dropdown-item">IncomeShow</a>
+              <a href="http://127.0.0.1:8000/incometab" class="dropdown-item">Add collection</a>
+              <a href="http://127.0.0.1:8000/incomeshow" class="dropdown-item">Show Income</a>
 						</div>
 					</li>
 
@@ -62,7 +59,7 @@
 						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Notes
             </a>
 			<div class="dropdown-menu">
-				<a href="http://127.0.0.1:8000/create" class="dropdown-item">Post</a>
+				<a href="http://127.0.0.1:8000/create" class="dropdown-item">Upload</a>
 				<a href="http://127.0.0.1:8000/index" class="dropdown-item">Check</a>
 						  </div>
 						<div class="dropdown-menu">
@@ -75,7 +72,7 @@
           <li class="dropdown">
 						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Attendance</a>
 						<div class="dropdown-menu">
-							<a href="http://127.0.0.1:8000/attend" class="dropdown-item">Give Attendance</a>
+							<a href="http://127.0.0.1:8000/attend" class="dropdown-item">Add Attendance</a>
               <a href="http://127.0.0.1:8000/attendview" class="dropdown-item">Check Attendance</a>
             	
 						</div>
@@ -105,8 +102,9 @@
       <a href="http://127.0.0.1:8000/studentmsgs" class="button button-primary">Discussion Panel</a><br>
       
       <a href="http://127.0.0.1:8000/marksheetmenu" class="button button-primary">Marksheets</a><br>
-      <a href="http://127.0.0.1:8000/assistancemenu" class="button button-primary">Post Assistance</a><br>
-      
+      {{-- <a href="http://127.0.0.1:8000/assistancemenu" class="button button-primary">Post Assistance</a><br> --}}
+	  <a href="http://127.0.0.1:8000/assignmenu" class="button button-primary">Assignments</a><br>
+	
 		</div>
 	</div>
 </header>
